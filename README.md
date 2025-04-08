@@ -1,44 +1,55 @@
-# ⚙️ 1. Clonar o repositório DeOldify
-!git clone https://github.com/jantic/DeOldify.git DeOldify
-%cd DeOldify
+# 🎨 Photo Colorizer Colab
 
-# 📦 2. Instalar dependências específicas do Colab
-!pip install -r requirements-colab.txt
+Colorize fotos antigas automaticamente com DeOldify no Google Colab, utilizando GPU grátis!
 
-# 📁 3. Criar pasta para modelos e baixar o modelo pré-treinado
-!mkdir models
-!wget https://data.deepai.org/deoldify/ColorizeArtistic_gen.pth -O ./models/ColorizeArtistic_gen.pth
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danarcanjosilva/photo-colorizer-colab/blob/main/DeOldify_colab.ipynb)
 
-# ⚡ 4. Configurar GPU
-from deoldify import device
-from deoldify.device_id import DeviceId
-import torch
+---
 
-device.set(device=DeviceId.GPU0)
+## 🚀 Como usar
 
-if not torch.cuda.is_available():
-    print('⚠️ GPU não está disponível. Vá em "Ambiente de execução > Alterar tipo de hardware > GPU"')
+1. Clique no botão **"Open in Colab"** acima.
+2. No Colab, vá em `Ambiente de execução > Alterar tipo de hardware > GPU`.
+3. Execute as células do notebook uma por uma.
+4. Envie uma imagem do seu Drive ou use uma URL para colorizá-la.
 
-# 🛠️ 5. Corrigir erro de segurança do PyTorch 2.6
-from functools import partial
-torch.serialization.add_safe_globals([partial])
+---
 
-# 🧠 6. Importar o colorizador de imagens
-from deoldify.visualize import *
-colorizer = get_image_colorizer(artistic=True)
+## 📂 Estrutura
 
-# 🗂️ 7. Montar Google Drive
-from google.colab import drive
-drive.mount('/content/drive')
+- `DeOldify_colab.ipynb` — Notebook principal para rodar no Colab.
+- `README.md` — Este arquivo com instruções.
+- `models/` — Pasta onde os modelos são salvos automaticamente.
+- `DeOldify/` — Repositório clonado com o código original.
 
-# 📷 8. Definir o caminho da sua imagem no Google Drive (ajuste conforme necessário)
-# Exemplo: imagem dentro da pasta MyDrive
-image_path = '/content/drive/MyDrive/sua_imagem.jpg'  # 🔁 Altere aqui se quiser usar outra
+---
 
-# 🖌️ 9. Colorizar imagem do seu Drive
-colorizer.plot_transformed_image(
-    path=image_path,
-    render_factor=35,
-    display_render_factor=True,
-    figsize=(8,8)
-)
+## 🖼 Exemplo de resultado
+
+Antes | Depois  
+------|-------
+![Preto e Branco](https://upload.wikimedia.org/wikipedia/commons/9/9a/1920s_Group_Portrait.jpg) | _Imagem colorizada após execução do notebook_
+
+---
+
+## 📌 Requisitos
+
+- Conta no Google
+- Acesso ao [Google Colab](https://colab.research.google.com)
+- Google Drive (opcional para salvar/carregar imagens)
+
+---
+
+## 📥 Modelos usados
+
+- `ColorizeArtistic_gen.pth`  
+- Armazenados automaticamente em `/models`
+
+---
+
+## 👨‍💻 Autor
+
+Feito com 💙 por [Daniel Arcanjo da Silva](https://github.com/danarcanjosilva)
+
+---
+
