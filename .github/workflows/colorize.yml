@@ -1,0 +1,26 @@
+
+---
+
+### ✅ `.github/workflows/colorize.yml`
+
+```yaml
+name: Run Colab Notebook
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-notebook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Execute notebook
+        uses: ammaraskar/sphinx-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          pre-build-command: pip install nbconvert
+          build-command: jupyter nbconvert --to notebook --execute photo_colorizer.ipynb --output executed_notebook.ipynb

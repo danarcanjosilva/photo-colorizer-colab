@@ -1,45 +1,38 @@
-# 🎨 Photo Colorizer - Google Colab
+# 🖼️ Photo Colorizer - Google Colab
 
-Projeto de colorização automática de fotos em preto e branco usando o modelo DeOldify, diretamente do Google Colab.
-
----
-
-## ⚙️ Como Usar
-
-1. Acesse o notebook via Colab:
-   [Abrir no Colab](https://colab.research.google.com/github/danarcanjosilva/photo-colorizer-colab/blob/main/photo_colorizer.ipynb)
-
-2. Altere o tipo de hardware para **GPU**:
-   Vá em `Ambiente de execução > Alterar tipo de hardware > GPU`
-
-3. Execute as células na ordem para instalar dependências, carregar o modelo e colorizar a imagem.
-
-4. Você pode trocar a imagem alterando o `image_url`.
+Colorize automaticamente fotos em preto e branco usando Inteligência Artificial direto do Google Colab.
 
 ---
 
-## 📦 Tecnologias
+## 🚀 Recursos
 
-- Python
-- Google Colab
-- PyTorch
-- DeOldify (modelo pré-treinado)
-- FastAI
-
----
-
-## 📸 Exemplo de Imagem
-
-Entrada:
-
-![Entrada](https://upload.wikimedia.org/wikipedia/commons/9/9a/1920s_Group_Portrait.jpg)
-
-Saída:  
-*(após rodar no notebook)*
+- Upload de imagem em preto e branco
+- Geração automática de imagem colorida usando IA
+- Resultado exibido diretamente no notebook
+- Baseado em redes neurais treinadas para colorização
 
 ---
 
-## 🚀 Clonar ou baixar o projeto
+## 🎯 Como Usar
+
+1. Acesse o notebook no Colab:  
+👉 [Abrir no Google Colab](https://colab.research.google.com/github/danarcanjosilva/photo-colorizer-colab/blob/main/photo_colorizer.ipynb)
+
+2. Faça upload de uma imagem em preto e branco (formato `.jpg` ou `.png`)
+
+3. Execute as células do notebook
+
+4. Veja sua imagem colorida automaticamente!
+
+---
+
+## 📁 Estrutura do Projeto
 
 ```bash
-git clone https://github.com/danarcanjosilva/photo-colorizer-colab.git
+photo-colorizer-colab/
+├── photo_colorizer.ipynb        # Notebook principal no Colab
+├── .github/
+│   └── workflows/
+│       └── colorize.yml         # Workflow do GitHub Actions (executa o notebook)
+└── README.md
+
