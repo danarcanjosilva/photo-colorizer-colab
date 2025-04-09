@@ -13,7 +13,13 @@ Colorize fotos antigas automaticamente com DeOldify no Google Colab, utilizando 
 3. Execute as células do notebook uma por uma.
 4. Envie uma imagem do seu Drive ou use uma URL para colorizá-la.
 
----
+--- 
+
+## 🖼️ Resultados
+
+![chinesap b](https://github.com/user-attachments/assets/997decc7-147a-4519-9664-181a779fbb8e)
+
+![chinesacolor](https://github.com/user-attachments/assets/8a38b141-237f-40ae-a315-0748c7c7cbd1)
 
 ## 📂 Estrutura
 
@@ -47,9 +53,14 @@ Antes | Depois
 
 ---
 
+## Resultado
+
+
 ## 👨‍💻 Autor
 
 Feito com 💙 por [Daniel Arcanjo da Silva](https://github.com/danarcanjosilva)
+
+
 
 ---
 
