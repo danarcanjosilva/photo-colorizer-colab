@@ -10,8 +10,9 @@ Colorize fotos antigas automaticamente com DeOldify no Google Colab, utilizando 
 
 1. Clique no botão **"Open in Colab"** acima.
 2. No Colab, vá em `Ambiente de execução > Alterar tipo de hardware > GPU`.
-3. Execute as células do notebook uma por uma.
-4. Envie uma imagem do seu computador.
+3. Execute as célula do notebook.
+4. Se aparecer erros vá em Ambiente de execução > Reiniciar sessão e executar tudo. 
+5. Envie uma imagem do seu computador.
 
 --- 
 
