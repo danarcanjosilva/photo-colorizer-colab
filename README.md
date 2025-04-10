@@ -61,7 +61,7 @@ Script adaptado para facilitar o uso do DeOldify no Google Colab com versões at
 
 ## 📦 Dependências
 - **DeOldify**: Framework de colorização criado por [Jason Antic](https://github.com/jantic).
-- 
+  
 ---
 
 ## ⚠️ Créditos e Licença
