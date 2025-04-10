@@ -49,7 +49,22 @@ Colorize fotos antigas automaticamente com DeOldify no Google Colab, utilizando 
 
 Feito com 💙 por [Daniel Arcanjo da Silva](https://github.com/danarcanjosilva)
 
+---
 
+# 🎨 Colorizador de Imagens para Google Colab
 
 ---
+
+Script adaptado para facilitar o uso do DeOldify no Google Colab com versões atualizadas das bibliotecas.
+
+---
+
+## 📦 Dependências
+- **DeOldify**: Framework de colorização criado por [Jason Antic](https://github.com/jantic).
+- 
+---
+
+## ⚠️ Créditos e Licença
+- O núcleo de colorização (`DeOldify/`) é propriedade de **Jason Antic** e está sob licença [MIT](LICENSE-DeOldify).
+- Adaptação do script de configuração por **Daniel Arcanjo da Silva**.
 
