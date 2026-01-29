@@ -8,8 +8,8 @@ Colorize fotos antigas automaticamente usando DeOldify no Google Colab, com GPU 
 
 Clique no botão abaixo para abrir o notebook no Colab:
 
-👉 Open in Colab
-(coloque aqui o badge do Colab com o link do seu notebook)
+👉 **Open in Colab**  
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danarcanjosilva/photo-colorizer-colab/blob/main/photo_colorizer.ipynb)
 
 ⚙️ Passo a passo (IMPORTANTE)
 1️⃣ Ativar GPU
