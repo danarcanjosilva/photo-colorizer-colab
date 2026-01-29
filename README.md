@@ -1,26 +1,67 @@
-# 🎨 Photo Colorizer Colab
+🎨 Photo Colorizer — Google Colab
 
-Colorize fotos antigas automaticamente com DeOldify no Google Colab, utilizando GPU grátis!
+Colorize fotos antigas automaticamente usando DeOldify no Google Colab, com GPU grátis e sem precisar instalar nada no computador.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danarcanjosilva/photo-colorizer-colab/blob/main/photo_colorizer.ipynb)
+👉 Ideal para fotos antigas em preto e branco.
 
----
+🚀 Executar no Google Colab
 
-## 🚀 Como usar
+Clique no botão abaixo para abrir o notebook no Colab:
 
-1. Clique no botão **"Open in Colab"** acima.
-2. No Colab, vá em `Ambiente de execução > Alterar tipo de hardware > GPU`.
-3. Execute a célula do notebook.
-4. Se aparecer erros vá em Ambiente de execução > Reiniciar sessão e executar tudo. 
-5. Envie uma imagem do seu computador.
+👉 Open in Colab
+(coloque aqui o badge do Colab com o link do seu notebook)
 
---- 
+⚙️ Passo a passo (IMPORTANTE)
+1️⃣ Ativar GPU
 
-## 🖼️ Resultados
+No Google Colab:
 
-![chinesap b](https://github.com/user-attachments/assets/997decc7-147a-4519-9664-181a779fbb8e)
+Ambiente de execução → Alterar tipo de hardware
 
-![chinesacolor](https://github.com/user-attachments/assets/8a38b141-237f-40ae-a315-0748c7c7cbd1)
+Em Acelerador de hardware, selecione GPU
+
+Clique em Salvar
+
+2️⃣ Executar a instalação
+
+Execute a primeira célula do notebook
+(Ela instala versões compatíveis do PyTorch, FastAI e DeOldify)
+
+⛔ Não pule essa etapa
+
+🔴 3️⃣ Reiniciar a sessão (OBRIGATÓRIO)
+
+Após a instalação, o Colab PRECISA ser reiniciado, senão ocorrem erros de carregamento de modelo.
+
+Faça exatamente assim:
+
+Ambiente de execução → Reiniciar sessão
+
+Confirme
+
+⚠️ Isso é normal no Colab e é necessário por causa das versões das bibliotecas.
+
+4️⃣ Executar o restante do notebook
+
+Depois do restart:
+
+Execute as células a partir da célula de imports
+
+Aguarde o modelo carregar
+
+Faça upload da imagem em preto e branco
+
+5️⃣ Colorizar a imagem
+
+O script irá processar a imagem
+
+O resultado colorido será exibido na tela 🎨✨
+
+
+<img width="1024" height="1536" alt="0cc0c042-caca-4532-8faf-c9a7733cf0a3" src="https://github.com/user-attachments/assets/74ecb914-856d-4f02-bbd9-3d890fd4a066" />
+
+
+<img width="1046" height="1560" alt="corenabonita" src="https://github.com/user-attachments/assets/4aeff08b-a1ba-411f-8875-9283067c87a9" />
 
 ## 📂 Estrutura
 
